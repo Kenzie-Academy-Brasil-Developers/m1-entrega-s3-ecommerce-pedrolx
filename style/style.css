@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    width: fit-content;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+p {
+    display: inline-block;
+}
+
+#barraNavegacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 60px 10px 60px;
+    background-color: #F5F5F5;
+}
+
+h1 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    justify-content: space-around;
+    margin: 10px;
+    color: #828282;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+li:hover {
+    color: #6B54DE;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#listaDeProdutos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 15px;
+}
+
+.produto {
+    width: 30%;
+    margin: 10px 13px;
+    background-color: #FFFFFF;
+}
+
+.produto:hover {
+    box-shadow: 0.1px 1px 1px 0.1px #333333, 0.1px 6px 10px 0.1px #333333;
+}
+
+#img {
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 40%;
+}
+
+#imagemProduto {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#detalhesProduto {
+    background-color: #FFFFFF;
+}
+
+#categoriaProduto {
+    background-color: #2E245E;
+    width: 40%;
+    padding: 7px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin: 7px 0px 0px 7px;
+}
+
+#categoriaProduto:hover {
+    box-shadow: 1px 1px 1px 1px #333333;
+}
+
+#nomeProduto {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 15px 0px;
+    color: #333333;
+    margin: 7px 0px 0px 7px;
+}
+
+#descricaoProduto {
+    text-align: left;
+    color: #333333;
+    margin: 7px 0px 0px 7px;
+}
+
+#precoProduto {
+    font-size: 12px;
+    font-weight: 600;
+    color: #2E245E;
+    margin: 7px 0px 5px 7px;
+}
+
+#precoProduto:hover {
+    text-decoration: underline;
+}
+
+#linkCarrinho{
+    color: #828282;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 7px 0px 0px 7px;
+}
+
+#linkCarrinho:hover {
+    font-weight: bolder;
+}
+
+#sessaoMenuLateral {
+    width: 25%;
+    margin: 15px;
+}
+
+#menuLateral {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#barraPesquisa {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+
+#barraPesquisa:hover {
+    box-shadow: 1px 1px 1px 1px #333333;
+}
+
+input {
+    width: 70%;
+    background-color: #F5F5F5;
+    padding: 10px;
+    color: #828282;
+}
+
+textarea:focus, input:focus {
+    box-shadow: 2px 2px 2px 2px #333333;
+    outline: 0;
+}
+
+
+button {
+    width: 30%;
+    background-color: #6B54DE;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 75%;
+}
+
+button:hover {
+    box-shadow: 0.3px 1px 1px 0.3px #333333, 0.3px 1px 1px 0.3px #333333;
+    border-radius: 2px;
+}
+
+#carrinho {
+    width: 100%;
+    background-color: #6B54DE;
+    color: #FFFFFF;
+    padding: 15px;
+    text-align: center;
+}
+
+#carrinho:hover {
+    border-radius: 5px 5px 0px 0px;
+}
+
+#produtosSelecionados {
+    width: 100%;
+    background-color: #F5F5F5;
+    height: fit-content;
+    text-align: center;
+    padding: 25%;
+}
+
+#produtosSelecionados:hover {
+    box-shadow: 0px 5px 5px 0px #333333;
+}
+
+#tituloCarrinho {
+    font-size: 22px;
+    font-weight: 700, bold;
+}
+
+#mensagemCarrinho {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#total {
+    width: 100%;
+    height: fit-content;
+    background-color: #333333;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 10px;
+    display: none;
+}
+
+#total:hover {
+    box-shadow: 0px 2px 2px 0px #333333;
+    border-radius: 0px 0px 5px 5px;
+}
+
+#dados1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 5px;
+}
+
+#dados2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 5px;
+}
+
+#quantidade {
+}
+
+#valorQuantidade {
+}
+
+#total {
+}
+
+#valorTotal {
+}
