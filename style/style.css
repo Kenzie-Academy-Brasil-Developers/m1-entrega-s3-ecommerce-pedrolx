@@ -8,8 +8,8 @@
 
 body {
     font-family: "Inter", sans-serif;
-    width: fit-content;
     height: 100vh;
+    width: 100vw;
 }
 
 a {
@@ -26,7 +26,6 @@ p {
 
 #barraNavegacao {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 10px 60px 10px 60px;
     background-color: #F5F5F5;
@@ -45,34 +44,38 @@ ul {
 
 li {
     justify-content: space-around;
-    margin: 10px;
+    padding: 10px;
     color: #828282;
     font-size: 16px;
     font-weight: 400;
 }
 
 li:hover {
-    color: #6B54DE;
-    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 0.3px 0.3px 0.3px #333333;
 }
 
 main {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px 0px 10px 10px;
 }
 
 #listaDeProdutos {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    margin: 15px;
+    height: fit-content;
 }
 
 .produto {
-    width: 30%;
-    margin: 10px 13px;
+    max-width: 30%;
     background-color: #FFFFFF;
+    max-height: min-content;
+    padding: 5px;
+    margin: 3px;
 }
 
 .produto:hover {
@@ -88,14 +91,14 @@ main {
 #imagemProduto {
     display: block;
     margin: 0 auto;
-    max-width: 100%;
-    max-height: 100%;
-    min-width: 100%;
-    min-height: 100%;
+    background-color: #F5F5F5;
+    margin-bottom: 10px;
+    height: 98%;
 }
 
 #detalhesProduto {
     background-color: #FFFFFF;
+    height: 60%;
 }
 
 #categoriaProduto {
@@ -106,10 +109,6 @@ main {
     color: #FFFFFF;
     font-weight: 400;
     margin: 7px 0px 0px 7px;
-}
-
-#categoriaProduto:hover {
-    box-shadow: 1px 1px 1px 1px #333333;
 }
 
 #nomeProduto {
@@ -151,13 +150,12 @@ main {
 
 #sessaoMenuLateral {
     width: 25%;
-    margin: 15px;
 }
 
 #menuLateral {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
+    padding: 5px;
 }
 
 #barraPesquisa {
@@ -165,10 +163,6 @@ main {
     width: 100%;
     margin-bottom: 10px;
     justify-content: space-around;
-}
-
-#barraPesquisa:hover {
-    box-shadow: 1px 1px 1px 1px #333333;
 }
 
 input {
@@ -179,7 +173,6 @@ input {
 }
 
 textarea:focus, input:focus {
-    box-shadow: 2px 2px 2px 2px #333333;
     outline: 0;
 }
 
@@ -195,6 +188,7 @@ button {
 button:hover {
     box-shadow: 0.3px 1px 1px 0.3px #333333, 0.3px 1px 1px 0.3px #333333;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 #carrinho {
@@ -217,18 +211,16 @@ button:hover {
     padding: 25%;
 }
 
-#produtosSelecionados:hover {
-    box-shadow: 0px 5px 5px 0px #333333;
-}
-
 #tituloCarrinho {
     font-size: 22px;
-    font-weight: 700, bold;
+    font-weight: 900, bold;
+    color: #333333;
 }
 
 #mensagemCarrinho {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 250;
+    color: #333333;
 }
 
 #total {
@@ -243,7 +235,6 @@ button:hover {
 }
 
 #total:hover {
-    box-shadow: 0px 2px 2px 0px #333333;
     border-radius: 0px 0px 5px 5px;
 }
 
@@ -259,16 +250,4 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     margin: 15px 5px;
-}
-
-#quantidade {
-}
-
-#valorQuantidade {
-}
-
-#total {
-}
-
-#valorTotal {
 }
