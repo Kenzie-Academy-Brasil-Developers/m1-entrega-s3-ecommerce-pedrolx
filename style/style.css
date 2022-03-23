@@ -136,12 +136,13 @@ main {
     text-decoration: underline;
 }
 
-#linkCarrinho{
+.linkCarrinho{
     color: #828282;
     text-decoration: underline;
     font-size: 14px;
     font-weight: 500;
     margin: 7px 0px 0px 7px;
+    cursor: pointer;
 }
 
 #linkCarrinho:hover {
@@ -206,8 +207,6 @@ button:hover {
 #produtosSelecionados {
     width: 100%;
     background-color: #F5F5F5;
-    height: fit-content;
-    text-align: center;
     padding: 25%;
 }
 
@@ -231,7 +230,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     padding: 18px 10px;
-    display: none;
+    visibility: hidden;
 }
 
 #total:hover {
@@ -250,4 +249,54 @@ button:hover {
     flex-direction: row;
     justify-content: space-between;
     margin: 15px 5px;
+}
+
+/*Estilização carrinho com produtos*/
+
+.caixaLista {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.produtoLista {
+    display: grid;
+    grid-template-areas: 
+    'imagemLista nomeLista'
+    'imagemLista precoList'
+    'imagemLista remove';
+}
+
+.imagemLista {
+    width: 100px;
+    height: 70px;
+    background-color: #FFFFFF;
+    grid-area: 'imagemLista';
+    grid-row: imagemLista;
+    cursor: default;
+}
+
+.nomeLista {
+    grid-area: 'nomeLista';
+    font-weight: 700;
+    font-size: 11px;
+    color: #333333;
+    cursor: default;
+}
+
+.precoList {
+    grid-area: 'precoList';
+    font-size: 10px;
+    font-weight: 600;
+    color: #2E245E;
+    cursor: default;
+}
+
+.remove {
+    grid-area: 'remove';
+    color: #828282;
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 500;
 }
